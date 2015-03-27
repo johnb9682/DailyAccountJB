@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category">
+        <item >meal</item>
+        <item >snacks</item>
+        <item >phone bill</item>
+        <item>clothes</item>
+        <item >transportation</item>
+        <item>necessities</item>
+        <item >debt</item>
+        <item>revenue</item>
+        <item >other expense</item>
+    </string-array>
+    
+    <array name="difficulty">
+        <item>expense</item>
+        <item>income</item>
+        <item>debt</item>
+        <item>other expense</item>
+    </array>
+</resources>

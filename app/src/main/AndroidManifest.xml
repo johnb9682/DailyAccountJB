@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="app.dailyaccountjb" >
+    package="app.report"
+    android:versionCode="8"
+    android:versionName="3.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
 
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
+        
+        <uses-library
+            android:name="android.test.runner"/>
+        
         <activity
-            android:name=".MainActivity"
+            android:name="app.report.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,6 +25,37 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="homepage"
+                  android:label="HomePage"></activity>
+        <activity android:name="newAccount"
+                  android:label="NewAccount"></activity>
+        <activity android:name="showBalance"
+                  android:theme = "@android:style/Theme.Dialog"></activity>
+        <activity android:name="debt"
+                  android:label="New Debt"></activity>
+        <activity android:name="OtherExpense"
+                  android:label="Record new Entry"></activity>
+        <activity android:name="monthReport"
+                  android:label="Monthly Report"></activity>
+        <activity android:name="revenue"
+                  android:label="Record Earning"></activity>
+        <activity android:name="about" 
+                  android:label="About the App"
+                  android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name="ReportExpenditure"></activity>
+        <activity android:name="ReportIncome"></activity>
+        <activity android:name="ReportLiability"></activity>
+        <activity android:name="homepage2"></activity>
+        <activity android:name="category"></activity>
+        <activity android:name="MyPlan"></activity>
+        <activity android:name="ListItem">
+        </activity>
+        <activity android:name="AddItem"
+                  android:theme="@android:style/Theme.Dialog"></activity>
+        
     </application>
-
+    <instrumentation 
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="app.report"
+        android:label="Tests For My app"></instrumentation>
 </manifest>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background">
+    <Button
+        android:id="@+id/account_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentLeft="true"
+        android:text="@string/homepage_new" />
+
+    <Button
+        android:id="@+id/report_botton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/about_button"
+        android:layout_below="@+id/resume_button"
+        android:text="@string/homepage_report" />
+
+    <Button
+        android:id="@+id/plan_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/resume_button"
+        android:layout_below="@+id/newgame_botton"
+        android:text="@string/homepage_plan" />
+
+    <Button
+        android:id="@+id/exit_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/homepage_exit" />
+    
+    <Button
+        android:id="@+id/about_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/homepage_about" />
+
+</LinearLayout>

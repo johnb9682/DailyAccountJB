@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.66"
+        android:ems="10"
+        android:inputType="numberSigned" >
+    </EditText>
+
+    <Spinner
+        android:id="@+id/category"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:entries="@array/category"
+        android:prompt="@string/category" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="26dp"
+        android:layout_weight="0.19"
+        android:text="save" />
+
+    <Button
+        android:id="@+id/cancel_botton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/about_button"
+        android:layout_below="@+id/resume_button"
+        android:layout_weight="0.13"
+        android:text="cancel" />
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:gravity="center" 
+    android:background="@drawable/background">
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="150dp"
+        android:duplicateParentState="true" >
+
+    </ViewFlipper>
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper_sub"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="500dp"
+        android:layout_marginRight="84dp" >
+    </ViewFlipper>
+
+    <EditText
+        android:id="@+id/text_newaccount"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="New Account" />
+
+    <EditText
+        android:id="@+id/text_exit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_about"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        android:text="Exit" />
+
+    <EditText
+        android:id="@+id/text_about"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_plan"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        android:text="About" />
+
+    <EditText
+        android:id="@+id/text_monthlyreport"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/viewFlipper_sub"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="Monthly Report" />
+
+    <EditText
+        android:id="@+id/text_plan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_monthlyreport"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="Set My Plan" />
+    
+</RelativeLayout>  

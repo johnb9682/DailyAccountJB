@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+        android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TableLayout 
+
+                android:layout_width="match_parent"
+	       
+                android:layout_height="match_parent">
+		
+                <TableRow>
+			
+                     <EditText 
+                            android:id="@+id/et_led"                      
+                            android:layout_width="fill_parent"
+       			            android:digits="1234567890.+-*/=%\n\t()"                             
+                            android:text=""
+			                android:layout_span="4" />
+		</TableRow>
+
+		<TableRow>
+			<Button 
+                            android:text="("                                                                 
+                            android:id="@+id/btn_LeftParenthesis">
+                            </Button>
+
+			<Button 
+                            android:text=")"                                                         
+                            android:id="@+id/btn_RightParenthesis">
+                            </Button>
+
+			<Button 
+                            android:text="*" 
+                            android:id="@+id/btn_x">
+                            </Button>
+
+			<Button 
+                            android:text="back" 
+                            android:id="@+id/btn_back">
+                            </Button>
+		</TableRow>
+
+		<TableRow>
+			<Button 
+                            android:text="7" 
+                            android:id="@+id/btn_7">
+                            </Button>
+			<Button 
+                            android:text="8" 
+                            android:id="@+id/btn_8">
+                            </Button>
+			<Button 
+                            android:text="9" 
+                            android:id="@+id/btn_9">
+                            </Button>
+			<Button 
+                            android:text="%" 
+                            android:id="@+id/btn_mod">
+                            </Button>
+		</TableRow>
+		<TableRow>
+			<Button android:text="4
+" android:id="@+id/btn_4
+"></Button>
+			<Button android:text="5
+" android:id="@+id/btn_5
+"></Button>
+			<Button android:text="6
+" android:id="@+id/btn_6
+"></Button>
+			<Button android:text="/
+" android:id="@+id/btn_div
+"></Button>
+		</TableRow>
+		<TableRow>
+			<Button android:text="1
+" android:id="@+id/btn_1
+"></Button>
+			<Button android:text="2
+" android:id="@+id/btn_2
+"></Button>
+			<Button android:text="3
+" android:id="@+id/btn_3
+"></Button>
+			<Button android:text="-
+" android:id="@+id/btn_sub
+"></Button>
+		</TableRow>
+		<TableRow>
+			<Button android:text="0
+" android:id="@+id/btn_0
+"></Button>
+			<Button android:text=".
+" android:id="@+id/btn_dot
+"></Button>
+			<Button android:text="+
+" android:id="@+id/btn_plus
+"></Button>
+			<Button android:text="=
+" android:id="@+id/btn_equal
+"></Button>
+		</TableRow>
+	</TableLayout>
+
+</LinearLayout>

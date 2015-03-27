@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:background="@drawable/background"> 
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:duplicateParentState="true" >
+
+
+    </ViewFlipper>
+    <EditText
+        android:id="@+id/text_monthlyreport"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_newaccount"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="Monthly Report" />
+
+    <EditText
+        android:id="@+id/text_plan"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_monthlyreport"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="Set My Plan" />
+
+    <EditText
+        android:id="@+id/text_about"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_plan"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="About" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/text_exit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_about"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="Exit" />
+
+    <EditText
+        android:id="@+id/text_newaccount"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:text="New Account" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper_sub"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+    </ViewFlipper>
+<include layout="@layout/footbar_layout_bottom"></include>
+</RelativeLayout>
