@@ -16,7 +16,9 @@ import app.report.R;
 import app.report.R.id;
 import app.report.R.layout;
 import app.report.R.menu;
-
+/*
+Author: Bi Ran
+ */
 public class ListItem extends Activity 
 {
 
@@ -53,8 +55,8 @@ public class ListItem extends Activity
         {
         	
         	public void onItemClick(AdapterView<?> parent, View view,     int position, long id) 
-        	{   //ÕâÀïÃæ¿ÉÒÔÅªswitch£¨position£©»òÕß±ðµÄ
-        	    //case£¨1£©
+        	{   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Åªswitchï¿½ï¿½positionï¿½ï¿½ï¿½ï¿½ï¿½ß±ï¿½ï¿½
+        	    //caseï¿½ï¿½1ï¿½ï¿½
         		Log.d("ListView", "Working"+position);
         		switch(position)
         		{
@@ -69,7 +71,7 @@ public class ListItem extends Activity
         			   Purchase(position);
         			   break;
         		}
-        	}//¾ÍÌø×ªµ½ÁíÒ»¸öÒ³Ãæ
+        	}//ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ò³ï¿½ï¿½
 
 			
 
